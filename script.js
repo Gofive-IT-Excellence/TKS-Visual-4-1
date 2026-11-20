@@ -2712,7 +2712,7 @@ const boardExecutiveTemplates = [
   {
     id: "board-executive-03",
     code: "BEX-003",
-    titleEn: "Suthida Mongkolsuthree",
+    titleEn: "Sutida Mongkolsuthree",
     titleTh: "สุธิดา มงคลสุธี",
     image: "./board-executive-03.png",
     fileName: "board-executive-03.png",
@@ -2720,7 +2720,7 @@ const boardExecutiveTemplates = [
   {
     id: "board-executive-04",
     code: "BEX-004",
-    titleEn: "Patinya Tawaaksorn",
+    titleEn: "Patinya Dheva-Aksorn",
     titleTh: "ปฏิญญา เทวอักษร",
     image: "./board-executive-04.png",
     fileName: "board-executive-04.png",
@@ -2728,7 +2728,7 @@ const boardExecutiveTemplates = [
   {
     id: "board-executive-05",
     code: "BEX-005",
-    titleEn: "Apisak Tantivorawong",
+    titleEn: "Apisak Tantiworawong",
     titleTh: "อภิศักดิ์ ตันติวรวงศ์",
     image: "./board-executive-05.png",
     fileName: "board-executive-05.png",
@@ -2760,7 +2760,7 @@ const boardExecutiveTemplates = [
   {
     id: "board-executive-09",
     code: "BEX-009",
-    titleEn: "Pakpoom Poo-Udom",
+    titleEn: "Parkpoom Pooudom",
     titleTh: "ภาคภูมิ ภูอุดม",
     image: "./board-executive-09.png",
     fileName: "board-executive-09.png",
@@ -2768,7 +2768,7 @@ const boardExecutiveTemplates = [
   {
     id: "board-executive-10",
     code: "BEX-010",
-    titleEn: "Tharathip Sringamphong",
+    titleEn: "Thanthip Srengamphong",
     titleTh: "ธารทิพย์ ศรีงามผ่อง",
     image: "./board-executive-10.png",
     fileName: "board-executive-10.png",
@@ -2776,7 +2776,7 @@ const boardExecutiveTemplates = [
   {
     id: "board-executive-11",
     code: "BEX-011",
-    titleEn: "Jirapong Wachirathanaporn",
+    titleEn: "Jiraphong Wachirathanaporn",
     titleTh: "จิรพงศ์ วชิราธนาภรณ์",
     image: "./board-executive-11.png",
     fileName: "board-executive-11.png",
@@ -2784,7 +2784,7 @@ const boardExecutiveTemplates = [
   {
     id: "board-executive-12",
     code: "BEX-012",
-    titleEn: "Rujee Jorapiphop",
+    titleEn: "Rujee Jonpipob",
     titleTh: "รุจี จรพิภพ",
     image: "./board-executive-12.png",
     fileName: "board-executive-12.png",
