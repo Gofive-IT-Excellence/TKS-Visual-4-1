@@ -1299,8 +1299,16 @@ button {
   font-weight: 500;
 }
 
-.browse-status {
+.browse-status-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
   margin: 0 0 42px;
+}
+
+.browse-status {
+  margin: 0;
 }
 
 .browse-status h1 {
@@ -1319,6 +1327,37 @@ button {
   font-size: 22px;
   line-height: 1.22;
   font-weight: 300 !important;
+}
+
+.home-back-button {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 160ms ease;
+}
+
+.home-back-button svg {
+  width: 40px;
+  height: 40px;
+  fill: none;
+  stroke: #8d9296;
+  stroke-width: 3.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.home-back-button:hover,
+.home-back-button:focus-visible {
+  opacity: 0.68;
+  outline: none;
 }
 
 .browse-grid {
@@ -2334,7 +2373,7 @@ button {
     margin-top: 58px;
   }
 
-  .browse-status {
+  .browse-status-row {
     margin-bottom: 32px;
   }
 
@@ -2456,6 +2495,10 @@ button {
 }
 
 @media (max-width: 520px) {
+  .browse-status-row { align-items: center; }
+  .home-back-button { width: 37px; height: 37px; }
+  .home-back-button svg { width: 35px; height: 35px; }
+
   .browse-grid,
   .collection-browser-grid,
   .home-masonry {

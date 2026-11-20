@@ -2826,6 +2826,7 @@ const els = {
   grid: document.querySelector("#template-grid"),
   activeTitle: document.querySelector("#active-title"),
   activeSubtitle: document.querySelector("#active-subtitle"),
+  homeBack: document.querySelector("#home-back-button"),
   browseMore: document.querySelector(".browse-more"),
   browseCollectionsHead: document.querySelector(".browse-collections-head"),
   mainHome: document.querySelector("#main-home"),
@@ -3845,6 +3846,7 @@ function renderGrid() {
 
   const templates = makeTemplates();
   const selectedTemplate = templates.find((item) => item.id === state.templatePreview);
+  els.homeBack.hidden = Boolean(selectedTemplate && isPromptTemplateDetailAvailable(selectedTemplate));
   els.grid.replaceChildren();
   els.grid.className = [
     "browse-grid",
@@ -4524,6 +4526,7 @@ function render() {
     els.articleDetail.hidden = true;
     els.workspace.hidden = false;
     els.collectionBrowser.hidden = true;
+    els.homeBack.hidden = false;
     renderGrid();
   }
   renderLangButtons();
@@ -4638,6 +4641,24 @@ els.backFromCollections.addEventListener("click", () => {
     state.view = "browse";
     state.main = "business";
   });
+});
+
+els.homeBack.addEventListener("click", () => {
+  transitionTo(() => {
+    state.main = "main";
+    state.view = "home";
+    state.sub = firstSubFor("business");
+    state.templatePreview = null;
+    state.logoPreview = null;
+    state.articlePreview = null;
+    state.galleryReturnPosition = null;
+    state.madeWithUsExpanded = false;
+    state.businessInfographicExpanded = false;
+    state.businessCoverVisibleCount = 30;
+    state.businessTimelineVisibleCount = 30;
+    state.query = "";
+    els.search.value = "";
+  }, { scrollTop: true });
 });
 
 startHeroVideoRotation();
